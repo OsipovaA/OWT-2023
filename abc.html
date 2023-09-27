@@ -2,9 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ссылки</title>
+    <title>Материалы занятия</title>
 </head>
 <body>
+<!-- <p>Пример закомментированного фрагмента </p>-->
+
+<h1>Первое занятие. Текст и форматирование</h1>
+
+<p> Абзац с отступами (не закрыт тег!)
+<p align="center"> Абзац с отступами и выравниванием по центру </p>
+<p> Абзац с отступами </p>
+Текст без тегов
+текст без отступов
+без нужных тегов будет отображаться в одну строчку
+даже если в самом коде этот текст занимает 4 строки
+<p align="justify">
+    Выравнивание по ширине: Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.
+</p>
+
+<nobr>Отключили автоматический перенос строк: Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Antarctica.</nobr>
+
+<p lang="ru"> Написано lang="ru" </p>
+<p lang="en"> lang="en"</p>
+
+<h2>Форматирование текста</h2>
+
+<b>Жирный текст: b Полужирное начертание</b>
+<br> <strong>Важность: strong Полужирное начертание</strong>
+<br> <i> i:Курсивное начертание</i>
+<br> <em>Важность: em: Курсивное начертание</em>
+
+<p><b><i> Полужирный курсив </i></b></p>
+
+Текст
+<br><big>Текст больше</big>
+<small>Текст меньше</small>
+
+<p>Верхний индекс sup: x<sup>2</sup>
+    <br>Нижний индекс sub: H<sub>2</sub></p>
+
+<br><mark>Выделяю</mark> текст
+
+<pre>
+Строка 1
+Строка 2
+Пробел 3шт   3шт Пробел
+</pre>
+
+<br>
+Строка 1
+Строка 2
+Пробел 3шт   3шт Пробел
+
+<h6>Справочная информация</h6>
+
+<h2>index Марширов ВВ</h2>
+
+<p>В этом параграфе встроен <span>оригинальный фрагмент</span> </p>
+<p>В текущем параграфе есть<br>разрыв строки</p>
+
+<p id="for_click">кликнуть</p>
+
+<p><s>Пример закомментированного фрагмента</s> </p>
+
+<p>
+    <font color="#20b2aa" face="" size=6> size=6, font - не рекомендуется</font>
+</p>
+<p>
+    <font size="+1" title="всплывающая подсказка"> size="+1", font - не рекомендуется</font>
+</p>
+
+<p><b><i><u> bold, italic, underline </u></i></b></p>
+<pre>
+    ________________________________________
+    |  10      12      13       14       55 |
+    |  изменений практически нет         5  |
+    ________________________________________
+    </pre>
+<blockquote>
+    вставляем цитату c продолжением на следующей строке c продолжением на следующей строке вставляем цитату c
+    продолжением на следующей строке c продолжением на следующей строке
+</blockquote>
+<hr color="Red" size="50" width=200>
+<p>
+<ul title="Не упорядочные  списки">
+    <li>первая строка списка
+    <li>вторая строка списка
+        третья строка
+</ul>
+</p>
+<ol>
+    <li> 1-й элемент списка
+    <li> 2-й элемент списка
+    <li> 3-й элемент списка
+</ol>
+
+<h1>Второе занятие. Ссылки</h1>
 
 <h2>Простая ссылка</h2>
 <p>Ссылка задаётся через: <a href="адрес_ссылки"> текст_ссылки </a></p>
@@ -16,7 +109,7 @@
 <br><a href="https://www.hse.ru/" target="_blank"> Открыть ссылку https://www.hse.ru/ в новом окне _blank</a>
 <br><a href="https://www.hse.ru/" target="_self">Открыть ссылку https://www.hse.ru/ в текущем окне _self </a>
 <br><a href="https://www.hse.ru/">Открыть ссылку https://www.hse.ru/ в текущем окне </a>
-<!--<br><a onclick="window.open('https://www.hse.ru/','_blank');"style="cursor:pointer"> Открыть ссылку https://www.hse.ru/ в новом окне через javascript </a> -->
+<br><a onclick="window.open('https://www.hse.ru/','_blank');"style="cursor:pointer"> Открыть ссылку https://www.hse.ru/ в новом окне через javascript </a>
 
 <h2>Применяем к ссылке атрибут title</h2>
 
@@ -44,9 +137,137 @@
 <br>5) Пустой атрибут href
 <br><a href="">Пустой атрибут href</a>
 
-<h2>Якорь</h2>
-Якорь на определенную часть страницы
-Якорь на другую страницу
+<h2>Картинки</h2>
 
+<p><img src="https://howtobeahero.de/images/thumb/a/aa/TwitterLogo26x26.png/100px-TwitterLogo26x26.png">
+    <br>Картинка с абсолютным адресом</p>
+
+<h3>Картинки с относительным адресом</h3>
+
+<p><img src="color.png">
+    <br>картинка со страничкой находятся в одной папке</p>
+<p><img src="added/picture.png">
+    <br> со странички спускаемся в подпапку с картинкой </p>
+<p><img src="../body_format.jpg">
+    <br> со странички поднимаемся вверх к картинке</p>
+<p><img src="../structure/typography_2.jfif" >
+    <br> со странички поднимаемся вверх и спускаемся в другую папку</p>
+
+<h3>Ссылка на картинку<a id="img"></a></h3>
+
+<p><a href="https://howtobeahero.de/images/thumb/a/aa/TwitterLogo26x26.png/100px-TwitterLogo26x26.png"><img src="https://howtobeahero.de/images/thumb/a/aa/TwitterLogo26x26.png/100px-TwitterLogo26x26.png" alt="Белая птичка на синем фоне из пикселей маленького размера"> </a></p>
+
+<h3>Атрибут title</h3>
+
+<p><img src="added/picture.png"
+        alt="Строитель выкладывает стену из тегов html"
+        title="Вы являетесь строителем своих знаний по html">
+    </a></p>
+
+<h3>Редактируем размер изображения</h3>
+
+<p><img src="added/picture.png"
+        alt="Строитель выкладывает стену из тегов html"
+        title="Вы являетесь строителем своих знаний по html"
+        width="500"
+        height="400">
+    <br>picture.png в сотых (сравнение с исходным)</p>
+
+<p><img src="../structure/typography_2.jfif"
+        alt="Строитель выкладывает стену из тегов html"
+        title="Вы являетесь строителем своих знаний по html"
+        width="500"
+        height="400">
+    <br>typography_2.jfif в сотых (сравнение разных изображений с одинаковым размером)</p>
+
+<p>
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40">
+    <br>typography_2.jfif в десятизначных числах для сравнения пикселей</p>
+
+<h3>Ещё атрибуты img</h3>
+
+<p>Выравнивание изображения
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+        align="middle">
+     по середине относительно окружающего его контекста typography_2.jfif</p>
+
+<p>Выравнивание изображения справа
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+         align="right">
+Выравнивание изображения справа относительно окружающего его контекста typography_2.jfif</p>
+
+<p>Выравнивание изображения
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+         align="middle"
+         hspace="70">
+    по середине относительно окружающего его контекста + отступ слева и справа от изображения typography_2.jfif</p>
+
+<p>Выравнивание изображения
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+         align="middle"
+         vspace="70">
+    по середине относительно окружающего его контекста + отступ сверху и снизу от изображения typography_2.jfif</p>
+
+<p>Выравнивание изображения
+    <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+         align="middle"
+         hspace="6"
+         vspace="7">
+    по середине + отступ слева и справа + отступ сверху и снизу typography_2.jfif</p>
+
+<p> <img src="../structure/typography_2.jfif"
+         alt="Строитель выкладывает стену из тегов html"
+         title="Вы являетесь строителем своих знаний по html"
+         width="50"
+         height="40"
+         border="6">
+    Ширина рамки вокруг изображения typography_2.jfif</p>
+
+<h2>ТЕГ VIDEO <a id="video"></a></h2>
+
+<br><video width="100%" height="auto" controls=""><source src="https://путь для файла/video.mp4" type="video/mp4"></video>
+
+<h3>Автоматически запустить видео при загрузке страницы</h3>
+<br><video width="100%" height="auto" controls autoplay><source src="https://путь для файла/video.mp4" type="video/mp4"></video>
+
+<h3>Вывести картинку на видео</h3>
+<br><video width="100%" height="auto" controls poster="color.png"><source src="https://www.youtube.com/watch?v=rSc_K7KjEGo&ab_channel=DeepPalace"></video>
+
+<h2>ТЕГ AUDIO</h2>
+<audio controls width="100%"><source src="https://путь для файла/audio.mp3"></audio>
+
+<h2>Закладка</h2>
+<h3>Закладка на этой странице</h3>
+<br><a href="#img" target="_blank" title="Закладка в текущем документе">Гиперссылка на закладку в текущем документе (эта страница, но через новую вкладку)</a>
+
+<br><a href="img.html#video" target="_blank" title="Закладка в текущем документе">Гиперссылка на закладку (эта страница, но через новую вкладку, прописала ссылку на страницу)</a>
+
+<br><a href="#video" target="_self" title="Закладка в текущем документе">Гиперссылка на закладку (эта страница, но на этой же вкладке)</a>
+
+    
 </body>
 </html>
